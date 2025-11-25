@@ -1,0 +1,95 @@
+import { StyleSheet } from "react-native"
+import { commonStyles } from "./common.styles"
+import { COLORS } from "../utils/constants"
+
+export const step2Styles = StyleSheet.create({
+  ...commonStyles,
+  verificationRow: {
+    flexDirection: "row",
+    gap: 10,
+  },
+  verificationInput: {
+    flex: 1,
+    borderWidth: 2,
+    borderColor: COLORS.BORDER,
+    borderRadius: 9,
+    padding: 11,
+    fontSize: 14,
+    backgroundColor: COLORS.BACKGROUND,
+    color: COLORS.TEXT_PRIMARY,
+    fontWeight: "500",
+    fontFamily: "Inter-Variable",
+  },
+  verificationInputVerified: {
+    borderColor: COLORS.SUCCESS,
+    backgroundColor: "#f1f8f4",
+  },
+  verifiedContainer: {
+    width: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 8,
+    flexDirection: "row",
+  },
+  verifiedText: {
+    fontSize: 12,
+    color: COLORS.SUCCESS,
+    fontWeight: "600",
+    fontFamily: "Inter-Variable",
+    textAlign: "center",
+  },
+  verifyButton: {
+    backgroundColor: COLORS.PRIMARY,
+    borderRadius: 9,
+    paddingHorizontal: 16,
+    justifyContent: "center",
+    alignItems: "center",
+    minWidth: 90,
+    shadowColor: COLORS.PRIMARY,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  verifyButtonDisabled: {
+    backgroundColor: COLORS.PRIMARY_LIGHT,
+    shadowOpacity: 0.1,
+  },
+  verifyButtonText: {
+    color: COLORS.BACKGROUND,
+    fontSize: 13,
+    fontWeight: "700",
+    fontFamily: "Inter-Variable",
+  },
+  hintContainer: {
+    marginTop: 8,
+    paddingHorizontal: 4,
+  },
+  hintText: {
+    fontSize: 11,
+    color: COLORS.TEXT_SECONDARY,
+    fontFamily: "Inter-Variable",
+    textAlign: "center",
+    fontStyle: "italic",
+  },
+  manualVerifyButton: {
+    marginTop: 12,
+    backgroundColor: COLORS.PRIMARY,
+    borderRadius: 9,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    alignSelf: "center",
+    shadowColor: COLORS.PRIMARY,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  manualVerifyButtonText: {
+    color: COLORS.BACKGROUND,
+    fontSize: 13,
+    fontWeight: "700",
+    fontFamily: "Inter-Variable",
+    textAlign: "center",
+  },
+})

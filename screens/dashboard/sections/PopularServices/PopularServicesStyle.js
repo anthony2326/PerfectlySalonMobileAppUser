@@ -1,0 +1,96 @@
+import { StyleSheet, Dimensions } from "react-native"
+
+const { width } = Dimensions.get("window")
+
+export const styles = StyleSheet.create({
+  section: {
+    paddingHorizontal: 20,
+    paddingVertical: 24,
+    backgroundColor: "#fafbfc",
+    marginVertical: 8,
+  },
+  header: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 18,
+  },
+  sectionTitle: {
+    fontSize: 22,
+    fontWeight: "800",
+    color: "#1f2937",
+    letterSpacing: 0.3,
+  },
+  viewAllButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 10,
+    backgroundColor: "#fef2f8",
+  },
+  seeAllText: {
+    fontSize: 14,
+    fontWeight: "700",
+    color: "#db2777",
+    marginRight: 4,
+    letterSpacing: 0.2,
+  },
+  grid: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+    gap: 12,
+  },
+  card: {
+    width: (width - 52) / 2,
+    backgroundColor: "#ffffff",
+    borderRadius: 20,
+    padding: 16,
+    borderWidth: 1,
+    borderColor: "#e5e7eb",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.08,
+    shadowRadius: 6,
+    elevation: 3,
+    alignItems: "center",
+    justifyContent: "space-between",
+    minHeight: 220,
+  },
+  iconWrapper: {
+    width: 90,
+    height: 90,
+    borderRadius: 18,
+    marginBottom: 12,
+    justifyContent: "center",
+    alignItems: "center",
+    overflow: "hidden",
+  },
+  icon: {
+    width: "100%",
+    height: "100%",
+  },
+  title: {
+    fontSize: 15,
+    fontWeight: "800",
+    color: "#1f2937",
+    marginBottom: 6,
+    textAlign: "center",
+    letterSpacing: 0.2,
+  },
+  description: {
+    fontSize: 12,
+    color: "#9ca3af",
+    textAlign: "center",
+    lineHeight: 18,
+    fontWeight: "600",
+    marginBottom: 10,
+  },
+  actionArrow: {
+    marginTop: "auto",
+    padding: 8,
+    borderRadius: 10,
+    backgroundColor: "#f9fafb",
+  },
+})
